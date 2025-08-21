@@ -1,52 +1,73 @@
 #include <stdio.h>
 
-int main() {
-
-    char estado 
-    char codigo [10];
-    char cidade_cidade [100];
+typedef struct {
+    char estado[20];
+    char codigo[10];
+    char nome_cidade[10];
     int populacao;
     float area;
     float pib;
     int pontos_turisticos;
 
-    printf(" Digite o estado: \n");
-    scanf("%s", &estado);
+} Carta;
 
-    printf(" Digite o codigo da carta: \n");
-    scanf("%s", &codigo);
+int main() {
+
+    Carta carta1;
+    Carta carta2;
+   
+    // PRIMEIRA CARTA SUPER TRUNFO A01
+
+    printf("--- Digite as informacoes da CARTA 1 ---\n");
+    
+    printf("Digite o Estado: \n");
+    scanf("%s", carta1.estado); 
+
+    printf("Digite o Codigo: \n");
+    scanf("%s", carta1.codigo);
 
     printf("Digite o nome da cidade: \n");
-    scanf("%s", &cidade);
+    scanf("%s", carta1.nome_cidade);
 
-    printf("Digita a população: \n");
-    scanf("%d", &populacao);
+    printf("Digite a Populacao: \n");
+    scanf("%d", &carta1.populacao);
 
-    printf ("Digite a area: \n");
-    scanf("%f", &area);
+    printf("Digite a Area: \n");
+    scanf("%f", &carta1.area);
 
     printf("Digite o pib: \n");
-    scanf("%f", &pib);
+    scanf("%f", &carta1.pib);
 
-    printf("Digite o ponto turistico: \n");
-    scanf("%d", &pontos turisticos);
-
-
-
-
-
+    printf("Digite os Pontos Turisticos: \n");
+    scanf("%d", &carta1.pontos_turisticos);
     
-    
+    // --- ENTRADA DE DADOS PARA A SEGUNDA CARTA ---
 
+    printf("\n--- Digite as informacoes da CARTA 2 ---\n");
 
+    printf("Digite o Estado: \n");
+    scanf("%s", carta2.estado);
 
+    printf("Digite o Codigo: \n");
+    scanf("%s", carta2.codigo);
 
+    printf("Digite o nome da cidade: \n");
+    scanf("%s", carta2.nome_cidade);
 
+    printf("Digite a Populacao: \n");
+    scanf("%d", &carta2.populacao);
 
+    printf("Digite a Area: \n");
+    scanf("%f", &carta2.area);
 
+    printf("Digite o pib: \n");
+    scanf("%f", &carta2.pib);
 
+    printf("Digite os Pontos Turisticos: \n");
+    scanf("%d", &carta2.pontos_turisticos);
 
+    return 0;
 }
-
+    
 
 
