@@ -16,7 +16,7 @@ int main() {
     Carta carta1;
     Carta carta2;
    
-    // PRIMEIRA CARTA SUPER TRUNFO A01
+   // --- ENTRADA DE DADOS PARA A PRIMERA CARTA --- 
 
     printf("--- Digite as informacoes da CARTA 1 ---\n");
     
